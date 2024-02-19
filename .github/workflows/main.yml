@@ -18,8 +18,7 @@ jobs:
       - name: Classification model
         run: |
           # Your ML workflow goes here
-          pip install -r ReqLibraries.txt
-          python Code.py
+          jupyter loan-repayment-prediction-classification.ipynb
       - name: Write CML report
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
